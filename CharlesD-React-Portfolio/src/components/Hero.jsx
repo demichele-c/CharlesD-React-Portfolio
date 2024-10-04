@@ -18,7 +18,7 @@ const Hero = () => {
           clearInterval(interval); // Stop after showing "Full-Stack Developer"
         }
       }, 1000); // Wait for fade-out transition before changing text
-    }, 3000); // Time between text changes (3 seconds)
+    }, 2000); // Time between text changes (2 seconds)
 
     return () => clearInterval(interval); // Cleanup the interval on unmount
   }, []);

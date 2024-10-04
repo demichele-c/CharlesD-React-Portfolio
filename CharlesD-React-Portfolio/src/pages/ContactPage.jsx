@@ -100,7 +100,7 @@ const ContactPage = () => {
         </h2>
         <form
           onSubmit={handleSubmit}
-          className="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8"
+          className="max-w-lg mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8"
         >
           <div className="mb-4">
             <label htmlFor="name" className="block text-light-text dark:text-dark-text mb-2">
@@ -113,7 +113,7 @@ const ContactPage = () => {
               value={formData.name}
               onChange={handleInputChange}
               onBlur={handleBlur}
-              className="w-full p-3 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300"
+              className="w-full p-3 bg-gray-100 dark:bg-gray-700 dark:text-white text-black rounded focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300"
             />
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
@@ -128,7 +128,7 @@ const ContactPage = () => {
               value={formData.email}
               onChange={handleInputChange}
               onBlur={handleBlur}
-              className="w-full p-3 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300"
+              className="w-full p-3 bg-gray-100 dark:bg-gray-700 dark:text-white text-black rounded focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300"
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
@@ -142,7 +142,7 @@ const ContactPage = () => {
               value={formData.message}
               onChange={handleInputChange}
               onBlur={handleBlur}
-              className="w-full p-3 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300"
+              className="w-full p-3 bg-gray-100 dark:bg-gray-700 dark:text-white text-black rounded focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300"
               rows="5"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}

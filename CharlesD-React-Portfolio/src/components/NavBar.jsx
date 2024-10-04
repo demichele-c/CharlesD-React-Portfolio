@@ -9,12 +9,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isDarkMode) {
-      document.body.classList.remove('light-mode');
-      document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark'); // Add Tailwind's 'dark' class to <html>
       localStorage.setItem('theme', 'dark'); // Save the mode to localStorage
     } else {
-      document.body.classList.remove('dark-mode');
-      document.body.classList.add('light-mode');
+      document.documentElement.classList.remove('dark'); // Remove Tailwind's 'dark' class from <html>
       localStorage.setItem('theme', 'light'); // Save the mode to localStorage
     }
   }, [isDarkMode]); // This will run every time isDarkMode changes
@@ -24,20 +22,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-opacity-75 bg-gray-900 text-white z-10 shadow-lg">
+    <nav className="fixed w-full bg-opacity-75 bg-white dark:bg-gray-900 text-gray-900 dark:text-white z-10 shadow-lg">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold hover:text-teal-400">
+        <a href="/" className="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400">
           Charles DeMichele
         </a>
         <ul className="flex space-x-6 text-lg">
-          <li><a href="/about" className="hover:text-teal-400">About Me</a></li>
-          <li><a href="/projects" className="hover:text-teal-400">Projects</a></li>
-          <li><a href="/contact" className="hover:text-teal-400">Contact</a></li>
-          <li><a href="/resume" className="hover:text-teal-400">Resume</a></li>
+          <li><a href="/about" className="hover:text-teal-500 dark:hover:text-teal-400">About Me</a></li>
+          <li><a href="/projects" className="hover:text-teal-500 dark:hover:text-teal-400">Projects</a></li>
+          <li><a href="/contact" className="hover:text-teal-500 dark:hover:text-teal-400">Contact</a></li>
+          <li><a href="/resume" className="hover:text-teal-500 dark:hover:text-teal-400">Resume</a></li>
         </ul>
         <button
           onClick={toggleMode}
-          className="px-4 py-2 bg-teal-500 text-white rounded hover:bg-teal-400"
+          className="px-4 py-2 bg-teal-500 dark:bg-teal-600 text-white rounded hover:bg-teal-400 dark:hover:bg-teal-500"
         >
           {isDarkMode ? 'Light Mode' : 'Dark Mode'}
         </button>

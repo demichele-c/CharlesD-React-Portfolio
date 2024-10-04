@@ -99,28 +99,28 @@ const ProjectsPage = () => {
         <h2 className="text-4xl font-bold text-light-text dark:text-dark-text mb-8">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="group relative w-full h-auto bg-gray-700 p-6 rounded-lg hover:bg-gray-600 transition duration-300">
+            <div key={index} className="group relative w-full h-auto bg-gray-200 dark:bg-gray-700 p-6 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition duration-300">
               {/* Project Image and Title */}
               <img src={project.image} alt={project.name} className="w-full h-32 object-cover mb-4 rounded-lg" />
-              <p className="text-white text-center font-bold">{project.name}</p>
+              <p className="text-black dark:text-white text-center font-bold">{project.name}</p>
 
               {/* Dropdown for Problem, Process, Solution, Impact */}
               <div className="mt-4 space-y-2">
                 <details>
                   <summary className="text-teal-400 cursor-pointer">Problem</summary>
-                  <p className="text-white text-sm">{project.problem}</p>
+                  <p className="text-black dark:text-white text-sm">{project.problem}</p>
                 </details>
                 <details>
                   <summary className="text-teal-400 cursor-pointer">Process</summary>
-                  <p className="text-white text-sm">{project.process}</p>
+                  <p className="text-black dark:text-white text-sm">{project.process}</p>
                 </details>
                 <details>
                   <summary className="text-teal-400 cursor-pointer">Solution</summary>
-                  <p className="text-white text-sm">{project.solution}</p>
+                  <p className="text-black dark:text-white text-sm">{project.solution}</p>
                 </details>
                 <details>
                   <summary className="text-teal-400 cursor-pointer">Impact</summary>
-                  <p className="text-white text-sm">{project.impact}</p>
+                  <p className="text-black dark:text-white text-sm">{project.impact}</p>
                 </details>
               </div>
 
@@ -139,7 +139,7 @@ const ProjectsPage = () => {
                 href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center mt-2 text-white"
+                className="block text-center mt-2 text-gray-800 dark:text-white"
               >
                 <FaGithub className="inline-block text-3xl hover:text-teal-400 transition" /> {/* GitHub Icon */}
               </a>
