@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Styles */
+/* Light Mode Styles */
 body.light-mode {
   background-color: white;
   color: black;
 }
 
-body.light-mode header, 
-body.light-mode section, 
+body.light-mode header,
+body.light-mode section,
 body.light-mode footer {
   background-color: #f3f4f6;
 }
 
 body.light-mode a {
-  color: #0c0c0c;
+  color: black;
 }
 
-body.light-mode #work a {
-  background-color: #d3d3d3;
+body.light-mode .text-black {
+  color: black;
 }

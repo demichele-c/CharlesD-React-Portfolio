@@ -5,7 +5,13 @@ const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleMode = () => {
-    document.body.classList.toggle('light-mode');
+    if (isDarkMode) {
+      document.body.classList.add('light-mode');
+      document.body.classList.remove('dark-mode');
+    } else {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+    }
     setIsDarkMode(!isDarkMode);
   };
 
