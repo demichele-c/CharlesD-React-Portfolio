@@ -2,22 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light Mode Styles */
+/* Smooth scrolling for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
 body.light-mode {
-  background-color: white;
-  color: black;
-}
-
-body.light-mode header,
-body.light-mode section,
-body.light-mode footer {
   background-color: #f3f4f6;
+  color: #1f2937;
 }
 
-body.light-mode a {
-  color: black;
+body.dark-mode {
+  background-color: #1a202c;
+  color: #f7fafc;
 }
 
-body.light-mode .text-black {
-  color: black;
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+footer {
+  margin-top: 0; /* Ensure no margin */
+}
+
+section {
+  margin-bottom: 0; /* Ensure no bottom margin for sections */
 }

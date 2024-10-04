@@ -1,27 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
+import ResumePage from './pages/ResumePage';  // Import ResumePage
+import Footer from './components/Footer';  // Import Footer
 
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/resume" element={<ResumePage />} />  {/* Add route for Resume page */}
+      </Routes>
+      <Footer />  {/* Add Footer to every page */}
     </Router>
   );
 };

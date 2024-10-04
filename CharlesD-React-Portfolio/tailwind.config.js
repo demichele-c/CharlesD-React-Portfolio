@@ -1,11 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",          // Include your HTML file
-    "./src/**/*.{js,jsx}",   // Include all JS and JSX files in the src folder
+    './src/**/*.{js,jsx,ts,tsx}',
+    './public/index.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'light-bg': '#f3f4f6',
+        'dark-bg': '#1a202c',
+        'light-text': '#1f2937',
+        'dark-text': '#f7fafc',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        display: ['Oswald', 'sans-serif'],
+        body: ['"Open Sans"', 'sans-serif'],
+      },
+      animation: {
+        fadeIn: 'fadeIn 2s ease-in forwards',
+      },
+    },
   },
   plugins: [],
 };
