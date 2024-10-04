@@ -9,7 +9,7 @@ const ResumePage = () => {
           Download my resume by clicking the button below:
         </p>
         <a
-          href="/assets/resume/Charles-DeMichele-Resume.pdf"  // Update with the actual path to your resume
+          href="/assets/files/Charles-DeMichele-Resume.pdf"  // Make sure this path points to the right location
           download
           className="px-6 py-3 bg-teal-500 hover:bg-teal-400 text-white rounded-full transition"
         >
