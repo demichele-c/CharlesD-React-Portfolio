@@ -106,21 +106,21 @@ const ProjectsPage = () => {
 
               {/* Dropdown for Problem, Process, Solution, Impact */}
               <div className="mt-4 space-y-2">
-                <details>
+                <details className="bg-white dark:bg-gray-800 rounded-md shadow p-3">
                   <summary className="text-teal-400 cursor-pointer">Problem</summary>
-                  <p className="text-black dark:text-white text-sm">{project.problem}</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">{project.problem}</p>
                 </details>
-                <details>
+                <details className="bg-white dark:bg-gray-800 rounded-md shadow p-3">
                   <summary className="text-teal-400 cursor-pointer">Process</summary>
-                  <p className="text-black dark:text-white text-sm">{project.process}</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">{project.process}</p>
                 </details>
-                <details>
+                <details className="bg-white dark:bg-gray-800 rounded-md shadow p-3">
                   <summary className="text-teal-400 cursor-pointer">Solution</summary>
-                  <p className="text-black dark:text-white text-sm">{project.solution}</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">{project.solution}</p>
                 </details>
-                <details>
+                <details className="bg-white dark:bg-gray-800 rounded-md shadow p-3">
                   <summary className="text-teal-400 cursor-pointer">Impact</summary>
-                  <p className="text-black dark:text-white text-sm">{project.impact}</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">{project.impact}</p>
                 </details>
               </div>
 
