@@ -6,7 +6,7 @@ const AboutPage = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <img
-            src="assets\images\chuck-computer.jpg"
+            src="assets/images/chuck-computer.jpg"
             alt="Charles DeMichele"
             className="w-full h-auto rounded-lg shadow-lg"
           />
@@ -14,13 +14,21 @@ const AboutPage = () => {
         <div className="md:w-1/2 mt-8 md:mt-0 md:ml-10 text-light-text dark:text-dark-text">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg mb-4">
-          I'm currently enrolled in a Full Stack Coding Bootcamp at the University of Central Florida, aiming to become a software developer. With 16 years in the restaurant industry as a chef, manager, and owner/operator, I've honed leadership, management, and problem-solving skills. Running my own restaurant taught me resilience, innovation, and the importance of customer satisfaction.
-
-In 2021, I transitioned to commercial diving, specializing in underwater construction. This role sharpened my technical skills, attention to detail, and ability to thrive under pressure.
-
-My diverse background fosters adaptability and a continuous learning mindset, driving my passion for technology. I am eager to apply my unique skills to software development, contributing to dynamic teams and solving complex problems.
-
-Let's connect if you're looking for a motivated, versatile individual ready to bring a fresh perspective to your team and make meaningful contributions in the tech industry.
+            Based in Philadelphia, PA, I am currently enrolled in UCF's Full Stack Coding Bootcamp, where I am gaining proficiency in:
+          </p>
+          <ul className="list-disc list-inside text-lg mb-4">
+            <li>JavaScript, Node.js, React, MongoDB, SQL</li>
+            <li>Building scalable, responsive web applications</li>
+            <li>Problem-solving and debugging complex software</li>
+          </ul>
+          <p className="text-lg mb-4">
+            My journey has taken me from the restaurant industry—where I led teams, managed operations, and owned my own business—to commercial diving, where I excelled in high-pressure environments. These experiences have sharpened my leadership, resilience, and attention to detail, skills that now empower me in web development.
+          </p>
+          <p className="text-lg mb-4">
+            I'm eager to apply my diverse background and technical expertise to help innovative teams build impactful software.
+          </p>
+          <p className="text-lg font-bold">
+            Let’s connect and discuss how I can bring value to your development team.
           </p>
         </div>
       </div>
