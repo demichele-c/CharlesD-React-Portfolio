@@ -7,6 +7,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import ResumePage from './pages/ResumePage';  // Import ResumePage
 import Footer from './components/Footer';  // Import Footer
+import './index.css';
 
 const App = () => {
   return (
