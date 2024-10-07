@@ -14,7 +14,7 @@ const AboutPage = () => {
         <div className="md:w-1/2 w-full text-light-text dark:text-dark-text md:pl-10"> {/* Added md:pl-10 for space */}
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center md:text-left">About Me</h2>
           <p className="text-base sm:text-lg mb-4">
-            Based in Philadelphia, PA, I completed UCF's Full Stack Coding Bootcamp, where I gained proficiency in:
+            Based in Philadelphia, PA, I am currently enrolled in UCF's Full Stack Coding Bootcamp, where I gained proficiency in:
           </p>
           <ul className="list-disc list-inside text-base sm:text-lg mb-4">
             <li>JavaScript, Node.js, React, MongoDB, SQL</li>
