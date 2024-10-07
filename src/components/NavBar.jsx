@@ -2,23 +2,28 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check if a mode preference exists in localStorage
     const savedMode = localStorage.getItem('theme');
-    return savedMode ? savedMode === 'dark' : true; // Default to dark mode
+    return savedMode ? savedMode === 'dark' : true;
   });
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add('dark'); // Add Tailwind's 'dark' class to <html>
-      localStorage.setItem('theme', 'dark'); // Save the mode to localStorage
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove('dark'); // Remove Tailwind's 'dark' class from <html>
-      localStorage.setItem('theme', 'light'); // Save the mode to localStorage
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
-  }, [isDarkMode]); // This will run every time isDarkMode changes
+  }, [isDarkMode]);
 
   const toggleMode = () => {
     setIsDarkMode(!isDarkMode);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -27,15 +32,31 @@ const Navbar = () => {
         <a href="/" className="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400">
           Charles DeMichele
         </a>
-        <ul className="flex space-x-6 text-lg">
+
+        {/* Hamburger Icon for Mobile */}
+        <button
+          className="block md:hidden focus:outline-none"
+          onClick={toggleMenu}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
+          </svg>
+        </button>
+
+        {/* Navbar Links */}
+        <ul
+          className={`${
+            isMenuOpen ? 'block' : 'hidden'
+          } md:flex space-y-4 md:space-y-0 md:space-x-6 text-lg mt-4 md:mt-0`}
+        >
           <li><a href="/about" className="hover:text-teal-500 dark:hover:text-teal-400">About Me</a></li>
           <li><a href="/projects" className="hover:text-teal-500 dark:hover:text-teal-400">Projects</a></li>
           <li><a href="/contact" className="hover:text-teal-500 dark:hover:text-teal-400">Contact</a></li>
           <li><a href="/resume" className="hover:text-teal-500 dark:hover:text-teal-400">Resume</a></li>
         </ul>
 
-        {/* Stylish Switch for Dark/Light Mode */}
-        <div className="flex items-center">
+        {/* Dark/Light Mode Switch */}
+        <div className="hidden md:flex items-center ml-4">
           <span className="mr-2 text-sm text-gray-500 dark:text-gray-300">
             {isDarkMode ? 'Dark' : 'Light'}
           </span>

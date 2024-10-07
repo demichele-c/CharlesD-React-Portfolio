@@ -93,14 +93,14 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-light-bg dark:bg-dark-bg py-20">
+    <div className="bg-light-bg dark:bg-dark-bg py-12 sm:py-20 px-4">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center text-light-text dark:text-dark-text mb-10">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-light-text dark:text-dark-text mb-10">
           Contact Me
         </h2>
         <form
           onSubmit={handleSubmit}
-          className="max-w-lg mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8"
+          className="max-w-lg mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 sm:p-8"
         >
           <div className="mb-4">
             <label htmlFor="name" className="block text-light-text dark:text-dark-text mb-2">

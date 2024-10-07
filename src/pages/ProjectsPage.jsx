@@ -11,7 +11,7 @@ const projects = [
     process: 'Built a full-stack blog platform using React for the front end, Node.js for the backend, and MongoDB as the database.',
     solution: 'Created a blog platform allowing developers to post, edit, and delete articles easily.',
     impact: 'Enhanced knowledge sharing within the developer community, increasing engagement and collaboration.',
-    technologies: 'React, Node.js, MongoDB'
+    technologies: 'React, Node.js, MongoDB',
   },
   {
     name: 'Social Network API',
@@ -22,7 +22,7 @@ const projects = [
     process: 'Designed an API using Node.js, Express, and MongoDB to handle user, thought, and friend management.',
     solution: 'Created a scalable API that allows CRUD operations for users, thoughts, and their friends.',
     impact: 'Streamlined development for other social network applications by providing a reusable API.',
-    technologies: 'Node.js, Express, MongoDB'
+    technologies: 'Node.js, Express, MongoDB',
   },
   {
     name: 'Mix-It!',
@@ -33,7 +33,7 @@ const projects = [
     process: 'Built a cocktail recipe application using Vanilla JavaScript, HTML, and CSS with a focus on user experience.',
     solution: 'Created a search-friendly app where users can search for cocktail recipes and save them to their favorites.',
     impact: 'Improved cocktail recipe discovery and management, making it easier for users to find and try new drinks.',
-    technologies: 'JavaScript, HTML, CSS'
+    technologies: 'JavaScript, HTML, CSS',
   },
   {
     name: 'Employee Tracker',
@@ -44,7 +44,7 @@ const projects = [
     process: 'Built a command-line application using Node.js and MySQL to manage employees, roles, and departments.',
     solution: 'A tool that allows HR to track employees, departments, and their roles efficiently.',
     impact: 'Reduced time spent on employee management and increased overall organizational efficiency.',
-    technologies: 'Node.js, Inquirer, MySQL'
+    technologies: 'Node.js, Inquirer, MySQL',
   },
   {
     name: 'DreamNet',
@@ -55,7 +55,7 @@ const projects = [
     process: 'Developed an AI-powered dream interpretation tool using the OpenAI API, Node.js, and Express.',
     solution: 'Provided a user-friendly interface where users can input their dreams and get AI-generated interpretations.',
     impact: 'Offered users an innovative way to explore the meanings behind their dreams, making AI more accessible.',
-    technologies: 'Node.js, Express, OpenAI API'
+    technologies: 'Node.js, Express, OpenAI API',
   },
   {
     name: 'Weather Dashboard',
@@ -66,7 +66,7 @@ const projects = [
     process: 'Built a weather app using JavaScript and the OpenWeather API to provide real-time weather information.',
     solution: 'A dashboard where users can get the current weather and forecast for cities around the world.',
     impact: 'Enhanced the ability for users to plan their daily activities based on real-time weather data.',
-    technologies: 'JavaScript, OpenWeather API'
+    technologies: 'JavaScript, OpenWeather API',
   },
   {
     name: 'Note Taker',
@@ -77,7 +77,7 @@ const projects = [
     process: 'Developed a note-taking application using Express.js and Node.js for handling back-end requests and storage.',
     solution: 'A web application where users can create, store, and delete notes efficiently.',
     impact: 'Provided a simple tool for users to organize their thoughts and tasks in a digital format.',
-    technologies: 'Express, Node.js, JavaScript'
+    technologies: 'Express, Node.js, JavaScript',
   },
   {
     name: 'Task Board',
@@ -88,21 +88,31 @@ const projects = [
     process: 'Created a task management board using HTML, CSS, and JavaScript to organize tasks visually.',
     solution: 'A task board where users can add, remove, and manage tasks effectively.',
     impact: 'Improved user productivity by providing a clear overview of tasks and their statuses.',
-    technologies: 'JavaScript, HTML, CSS'
-  }
+    technologies: 'JavaScript, HTML, CSS',
+  },
 ];
 
 const ProjectsPage = () => {
   return (
-    <div className="bg-light-bg dark:bg-dark-bg py-20">
-      <div className="container mx-auto p-6">
-        <h2 className="text-4xl font-bold text-light-text dark:text-dark-text mb-8">My Projects</h2>
+    <div className="bg-light-bg dark:bg-dark-bg py-12 px-4">
+      <div className="container mx-auto mt-8 md:mt-16">
+        <h2 className="text-3xl sm:text-4xl font-bold text-light-text dark:text-dark-text text-center mb-8">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div key={index} className="group relative w-full h-auto bg-gray-200 dark:bg-gray-700 p-6 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition duration-300">
               {/* Project Image and Title */}
               <img src={project.image} alt={project.name} className="w-full h-32 object-cover mb-4 rounded-lg" />
               <p className="text-black dark:text-white text-center font-bold">{project.name}</p>
+
+              {/* "See It In Action" Button */}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center mt-4 py-2 px-4 bg-teal-500 text-white rounded-lg hover:bg-teal-400 transition"
+              >
+                See It In Action
+              </a>
 
               {/* Dropdown for Problem, Process, Solution, Impact */}
               <div className="mt-4 space-y-2">
@@ -123,16 +133,6 @@ const ProjectsPage = () => {
                   <p className="text-gray-700 dark:text-gray-300 text-sm">{project.impact}</p>
                 </details>
               </div>
-
-              {/* "See It In Action" Button */}
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center mt-4 py-2 px-4 bg-teal-500 text-white rounded-lg hover:bg-teal-400 transition"
-              >
-                See It In Action
-              </a>
 
               {/* GitHub Repo Icon */}
               <a
