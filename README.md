@@ -5,19 +5,34 @@
 ## Description
 
 
+This portfolio project showcases my journey as a Full Stack Developer, combining the skills I acquired during the UCF Full Stack Coding Bootcamp with my diverse background in restaurants, commercial diving, and technology. The project is built using React, Tailwind CSS, and JavaScript, offering employers and collaborators an interactive experience to explore my work. It features light and dark mode, responsive design, and various projects I've developed, each highlighting specific technical challenges and solutions. The portfolio provides a streamlined way for potential employers to learn about my skills, view my projects, and get in touch.
+
+## Screenshots
+
+### Home Page
+![Home Page](public\assets\images\coverpage-screenshot.png)
+
+### About Me Page
+![About Me Page](public\assets\images\about-me-screenshot.png)
+
+### Projects Page
+![Projects Page](public\assets\images\projects-screenshot.png)
+
+### Contact Me Page
+![Contact Me Page](public\assets\images\contact-me-screenshot.png)
+
+### Resume Page
+![Resume Page](public\assets\images\resume-screenshot.png)
+
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 - [License](#license)
 
-## Installation
-
-This portfolio project showcases my journey as a Full Stack Developer, combining the skills I acquired during the UCF Full Stack Coding Bootcamp with my diverse background in restaurants, commercial diving, and technology. The project is built using React, Tailwind CSS, and JavaScript, offering employers and collaborators an interactive experience to explore my work. It features light and dark mode, responsive design, and various projects I've developed, each highlighting specific technical challenges and solutions. The portfolio provides a streamlined way for potential employers to learn about my skills, view my projects, and get in touch.
 
 ## Usage
 
