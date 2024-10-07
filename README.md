@@ -10,19 +10,19 @@ This portfolio project showcases my journey as a Full Stack Developer, combining
 ## Screenshots
 
 ### Home Page
-![Home Page](public\assets\images\coverpage-screenshot.png)
+![Home Page](public/assets/images/coverpage-screenshot.png)
 
 ### About Me Page
-![About Me Page](public\assets\images\about-me-screenshot.png)
+![About Me Page](public/assets/images/about-me-screenshot.png)
 
 ### Projects Page
-![Projects Page](public\assets\images\projects-screenshot.png)
+![Projects Page](public/assets/images/projects-screenshot.png)
 
 ### Contact Me Page
-![Contact Me Page](public\assets\images\contact-me-screenshot.png)
+![Contact Me Page](public/assets/images/contact-me-screenshot.png)
 
 ### Resume Page
-![Resume Page](public\assets\images\resume-screenshot.png)
+![Resume Page](public/assets/images/resume-screenshot.png)
 
 
 ## Table of Contents
