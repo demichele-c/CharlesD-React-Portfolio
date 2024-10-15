@@ -3,6 +3,17 @@ import { FaGithub, FaCode, FaDatabase, FaServer } from 'react-icons/fa'; // Impo
 
 const projects = [
   {
+    name: 'ItinerAi',
+    image: 'assets/images/coming-soon.png', 
+    link: 'https://your-itinerai-deployment-url.com', // Update with the correct deployment link
+    repo: 'https://github.com/demichele-c/ItinerAi', 
+    problem: 'Couples or individuals struggle to plan their date nights or itineraries easily.',
+    process: 'Developed using React for the front end, GraphQL with Node.js and Express for the back end, MongoDB for data storage, and integrated OpenAI for generating itinerary suggestions.',
+    solution: 'ItinerAi generates personalized date night itineraries based on user preferences such as location, activities, and food choices.',
+    impact: 'Simplified the process of creating customized and thoughtful date night plans, helping users save time while creating memorable experiences.',
+    technologies: 'React, Node.js, GraphQL, Express, MongoDB, OpenAI API',
+  },
+  {
     name: 'DevBlog',
     image: 'assets/images/Dev-Blog.png',
     link: 'https://demichele-c.github.io/Dev-Blog/',
