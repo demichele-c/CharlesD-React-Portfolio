@@ -5,7 +5,7 @@ const projects = [
   {
     name: 'ItinerAi',
     image: 'assets/images/coming-soon.png', // Update with the correct image path
-    link: 'https://your-itinerai-deployment-url.com', // Update with the correct deployment link
+    link: 'https://itinerai.onrender.com/',
     repo: 'https://github.com/demichele-c/ItinerAi', 
     problem: 'Couples or individuals struggle to plan their date nights or itineraries easily.',
     process: 'Developed using React for the front end, GraphQL with Node.js and Express for the back end, MongoDB for data storage, and integrated OpenAI for generating itinerary suggestions.',
