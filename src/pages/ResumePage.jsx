@@ -15,7 +15,7 @@ const ResumePage = () => {
           Download my resume by clicking the button below:
         </p>
         <a
-          href="/assets/files/Charles-DeMichele-Resume.pdf"  // Ensure the path is correct
+          href="/assets/files/Charles-DeMichele.pdf"  // Ensure the path is correct
           download
           className="inline-block px-8 py-3 bg-teal-500 hover:bg-teal-400 text-white rounded-full transition shadow-lg transform hover:scale-105"
         >
