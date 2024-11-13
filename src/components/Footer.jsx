@@ -16,7 +16,7 @@ const Footer = () => {
             <i className="fab fa-github text-xl sm:text-2xl"></i>  {/* GitHub icon */}
           </a>
           <a 
-            href="https://www.linkedin.com/in/charles-demichele-601366313/" 
+            href="https://www.linkedin.com/in/charles-demichele-software-developer/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-teal-500 dark:hover:text-teal-400"
